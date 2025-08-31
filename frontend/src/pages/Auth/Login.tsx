@@ -59,7 +59,7 @@ const Login: React.FC = () => {
             <h1 className="glow-text">HACK2DRUG</h1>
             <p className="text-muted">Advanced Drug Detection & Monitoring System</p>
             <div className="auth-subtitle">
-              <span className="terminal">> Access Control Terminal</span>
+              <span className="terminal"> Access Control Terminal</span>
             </div>
           </div>
 
@@ -126,7 +126,7 @@ const Login: React.FC = () => {
           {/* Demo Credentials */}
           <div className="demo-credentials">
             <div className="terminal">
-              <span className="terminal-prompt">></span>
+              <span className="terminal-prompt"></span>
               <span className="terminal-text">Demo Credentials: admin / admin</span>
             </div>
           </div>

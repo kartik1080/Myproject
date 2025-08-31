@@ -112,3 +112,4 @@ INFO 2025-08-31 17:51:01,760 autoreload 6308 3416 E:\Myproject\backend\hack2drug
 INFO 2025-08-31 17:51:02,366 autoreload 22304 18408 Watching for file changes with StatReloader
 INFO 2025-08-31 17:51:40,978 autoreload 22304 18408 E:\Myproject\backend\hack2drug\urls.py changed, reloading.
 INFO 2025-08-31 17:51:41,784 autoreload 10680 2452 Watching for file changes with StatReloader
+INFO 2025-08-31 23:44:58,611 autoreload 20240 20404 Watching for file changes with StatReloader
