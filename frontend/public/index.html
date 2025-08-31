@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#00ff00" />
+    <meta
+      name="description"
+      content="Hack2Drug - Advanced Drug Detection & Monitoring System | Cyberpunk Security Platform"
+    />
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    
+    <!-- Hacking Theme Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+    
+    <!-- Matrix Rain Effect CSS -->
+    <style>
+      @keyframes matrix-rain {
+        0% { transform: translateY(-100vh); opacity: 1; }
+        100% { transform: translateY(100vh); opacity: 0; }
+      }
+      
+      .matrix-bg {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(45deg, #000000, #001a00, #000000);
+        z-index: -1;
+        overflow: hidden;
+      }
+      
+      .matrix-rain {
+        position: absolute;
+        color: #00ff00;
+        font-family: 'Share Tech Mono', monospace;
+        font-size: 14px;
+        line-height: 14px;
+        text-shadow: 0 0 5px #00ff00;
+        animation: matrix-rain 3s linear infinite;
+        opacity: 0.3;
+      }
+    </style>
+    
+    <title>Hack2Drug | Cyberpunk Security Platform</title>
+  </head>
+  <body>
+    <noscript>You need to enable JavaScript to run this application.</noscript>
+    
+    <!-- Matrix Rain Background -->
+    <div class="matrix-bg" id="matrix-bg"></div>
+    
+    <div id="root"></div>
+    
+    <!-- Matrix Rain Effect Script -->
+    <script>
+      function createMatrixRain() {
+        const bg = document.getElementById('matrix-bg');
+        const chars = '01アイウエオカキクケコサシスセソタチツテトナニヌネノハヒフヘホマミムメモヤユヨラリルレロワヲン';
+        
+        setInterval(() => {
+          const rain = document.createElement('div');
+          rain.className = 'matrix-rain';
+          rain.style.left = Math.random() * 100 + '%';
+          rain.style.animationDelay = Math.random() * 2 + 's';
+          rain.textContent = chars[Math.floor(Math.random() * chars.length)];
+          bg.appendChild(rain);
+          
+          setTimeout(() => {
+            rain.remove();
+          }, 3000);
+        }, 100);
+      }
+      
+      // Start matrix rain when page loads
+      window.addEventListener('load', createMatrixRain);
+    </script>
+  </body>
+</html>

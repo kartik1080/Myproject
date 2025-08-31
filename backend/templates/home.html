@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ project_name }}</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            min-height: 100vh;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+        .header {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+        .header h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+        .header p {
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-bottom: 3rem;
+        }
+        .feature-card {
+            background: rgba(255,255,255,0.1);
+            padding: 2rem;
+            border-radius: 10px;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255,255,255,0.2);
+        }
+        .feature-card h3 {
+            margin-top: 0;
+            color: #ffd700;
+        }
+        .endpoints {
+            background: rgba(255,255,255,0.1);
+            padding: 2rem;
+            border-radius: 10px;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255,255,255,0.2);
+        }
+        .endpoints h3 {
+            margin-top: 0;
+            color: #ffd700;
+        }
+        .endpoint-list {
+            list-style: none;
+            padding: 0;
+        }
+        .endpoint-list li {
+            padding: 0.5rem 0;
+            border-bottom: 1px solid rgba(255,255,255,0.1);
+        }
+        .endpoint-list li:last-child {
+            border-bottom: none;
+        }
+        .endpoint-link {
+            color: #4ade80;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .endpoint-link:hover {
+            text-decoration: underline;
+        }
+        .status {
+            text-align: center;
+            margin-top: 2rem;
+            padding: 1rem;
+            background: rgba(76, 175, 80, 0.2);
+            border-radius: 5px;
+            border: 1px solid rgba(76, 175, 80, 0.3);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>{{ project_name }}</h1>
+            <p>{{ description }}</p>
+        </div>
+        
+        <div class="features">
+            <div class="feature-card">
+                <h3>🔍 Real-time Detection</h3>
+                <p>Advanced AI-powered detection of drug-related activities across multiple encrypted platforms with real-time monitoring and instant alerts.</p>
+            </div>
+            
+            <div class="feature-card">
+                <h3>📊 Analytics & Reporting</h3>
+                <p>Comprehensive analytics dashboard with trend analysis, geographic insights, and detailed performance metrics for informed decision-making.</p>
+            </div>
+            
+            <div class="feature-card">
+                <h3>🛡️ Security & Compliance</h3>
+                <p>Enterprise-grade security with role-based access control, audit logging, and compliance features for law enforcement and regulatory requirements.</p>
+            </div>
+            
+            <div class="feature-card">
+                <h3>🔌 API Integration</h3>
+                <p>RESTful API with webhook support, enabling seamless integration with existing systems and third-party applications.</p>
+            </div>
+            
+            <div class="feature-card">
+                <h3>📱 Multi-Platform</h3>
+                <p>Monitor multiple platforms simultaneously including Telegram, Instagram, Twitter, and other encrypted messaging services.</p>
+            </div>
+            
+            <div class="feature-card">
+                <h3>⚡ Performance</h3>
+                <p>High-performance architecture with Redis caching, Celery task processing, and optimized database queries for real-time operations.</p>
+            </div>
+        </div>
+        
+        <div class="endpoints">
+            <h3>Available Endpoints</h3>
+            <ul class="endpoint-list">
+                <li><a href="/admin/" class="endpoint-link">🔐 Admin Panel</a> - System administration and user management</li>
+                <li><a href="/api/" class="endpoint-link">🌐 API Root</a> - REST API documentation and endpoints</li>
+                <li><a href="/users/" class="endpoint-link">👥 Users</a> - User management and authentication</li>
+                <li><a href="/detection/" class="endpoint-link">🔍 Detection</a> - Drug detection patterns and results</li>
+                <li><a href="/monitoring/" class="endpoint-link">📡 Monitoring</a> - Platform monitoring and content collection</li>
+                <li><a href="/analytics/" class="endpoint-link">📊 Analytics</a> - Reports and data analysis</li>
+            </ul>
+        </div>
+        
+        <div class="status">
+            <strong>✅ System Status: Online</strong><br>
+            <small>All services are running normally</small>
+        </div>
+    </div>
+</body>
+</html>
