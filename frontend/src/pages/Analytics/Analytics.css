@@ -1,0 +1,196 @@
+/* Analytics Page Styles */
+.analytics-page {
+  padding: 20px 0;
+}
+
+/* Report List */
+.report-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.report-item {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 20px;
+  background: rgba(0, 255, 0, 0.03);
+  border-radius: 8px;
+  border: 1px solid rgba(0, 255, 0, 0.2);
+  transition: all 0.3s ease;
+}
+
+.report-item:hover {
+  background: rgba(0, 255, 0, 0.08);
+  border-color: var(--accent-blue);
+  transform: translateX(5px);
+}
+
+.report-icon {
+  font-size: 2rem;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 255, 0, 0.1);
+  border-radius: 50%;
+  border: 1px solid var(--border-color);
+}
+
+.report-info {
+  flex: 1;
+}
+
+.report-title {
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 5px;
+  font-size: 1.1rem;
+}
+
+.report-meta {
+  display: flex;
+  gap: 20px;
+  color: var(--text-muted);
+  font-size: 0.9rem;
+  font-family: 'Share Tech Mono', monospace;
+}
+
+.report-status {
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.status-completed {
+  background: rgba(0, 255, 64, 0.2);
+  color: var(--success);
+  border: 1px solid var(--success);
+}
+
+.status-processing {
+  background: rgba(0, 255, 255, 0.2);
+  color: var(--accent-blue);
+  border: 1px solid var(--accent-blue);
+}
+
+.status-failed {
+  background: rgba(255, 0, 64, 0.2);
+  color: var(--danger);
+  border: 1px solid var(--danger);
+}
+
+/* Trend List */
+.trend-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.trend-item {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 15px;
+  background: rgba(0, 255, 0, 0.03);
+  border-radius: 6px;
+  border-left: 3px solid var(--border-color);
+  transition: all 0.3s ease;
+}
+
+.trend-item:hover {
+  background: rgba(0, 255, 0, 0.08);
+  border-left-color: var(--accent-blue);
+}
+
+.trend-icon {
+  font-size: 1.5rem;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 255, 0, 0.1);
+  border-radius: 50%;
+  border: 1px solid var(--border-color);
+}
+
+.trend-info {
+  flex: 1;
+}
+
+.trend-name {
+  font-weight: 600;
+  color: var(--text-primary);
+  margin-bottom: 3px;
+}
+
+.trend-meta {
+  display: flex;
+  gap: 20px;
+  color: var(--text-muted);
+  font-size: 0.8rem;
+  font-family: 'Share Tech Mono', monospace;
+}
+
+.trend-change {
+  font-weight: 700;
+  font-family: 'Share Tech Mono', monospace;
+}
+
+.trend-change.up {
+  color: var(--success);
+}
+
+.trend-change.down {
+  color: var(--danger);
+}
+
+.trend-change.stable {
+  color: var(--text-muted);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .report-item {
+    flex-direction: column;
+    text-align: center;
+    gap: 10px;
+  }
+  
+  .report-status {
+    align-self: center;
+  }
+  
+  .report-meta {
+    flex-direction: column;
+    gap: 5px;
+    text-align: center;
+  }
+  
+  .trend-item {
+    flex-direction: column;
+    text-align: center;
+    gap: 10px;
+  }
+  
+  .trend-meta {
+    flex-direction: column;
+    gap: 5px;
+    text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .report-icon,
+  .trend-icon {
+    width: 60px;
+    height: 60px;
+    font-size: 2.5rem;
+  }
+}

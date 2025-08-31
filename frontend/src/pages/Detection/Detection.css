@@ -1,0 +1,238 @@
+/* Detection Page Styles */
+.detection-page {
+  padding: 20px 0;
+}
+
+.page-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.page-header h1 {
+  margin-bottom: 10px;
+  font-size: 3.5rem;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+}
+
+.page-header p {
+  font-size: 1.2rem;
+  color: var(--text-muted);
+  font-family: 'Share Tech Mono', monospace;
+}
+
+/* Pattern List */
+.pattern-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.pattern-item {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 20px;
+  background: rgba(0, 255, 0, 0.03);
+  border-radius: 8px;
+  border: 1px solid rgba(0, 255, 0, 0.2);
+  transition: all 0.3s ease;
+}
+
+.pattern-item:hover {
+  background: rgba(0, 255, 0, 0.08);
+  border-color: var(--accent-blue);
+  transform: translateX(5px);
+}
+
+.pattern-icon {
+  font-size: 2rem;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 255, 0, 0.1);
+  border-radius: 50%;
+  border: 1px solid var(--border-color);
+}
+
+.pattern-info {
+  flex: 1;
+}
+
+.pattern-name {
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 5px;
+  font-size: 1.1rem;
+}
+
+.pattern-description {
+  color: var(--text-muted);
+  font-size: 0.9rem;
+  font-family: 'Share Tech Mono', monospace;
+}
+
+.pattern-status {
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.pattern-status.active {
+  background: rgba(0, 255, 64, 0.2);
+  color: var(--success);
+  border: 1px solid var(--success);
+}
+
+.pattern-status.inactive {
+  background: rgba(255, 0, 64, 0.2);
+  color: var(--danger);
+  border: 1px solid var(--danger);
+}
+
+/* Detection List */
+.detection-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.detection-item {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 15px;
+  background: rgba(0, 255, 0, 0.03);
+  border-radius: 6px;
+  border-left: 3px solid var(--border-color);
+  transition: all 0.3s ease;
+}
+
+.detection-item:hover {
+  background: rgba(0, 255, 0, 0.08);
+  border-left-color: var(--accent-blue);
+}
+
+.detection-icon {
+  font-size: 1.5rem;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 255, 0, 0.1);
+  border-radius: 50%;
+  border: 1px solid var(--border-color);
+}
+
+.detection-info {
+  flex: 1;
+}
+
+.detection-pattern {
+  font-weight: 600;
+  color: var(--text-primary);
+  margin-bottom: 3px;
+}
+
+.detection-platform {
+  color: var(--text-muted);
+  font-size: 0.9rem;
+  font-family: 'Share Tech Mono', monospace;
+}
+
+.detection-meta {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  align-items: flex-end;
+}
+
+.confidence {
+  font-weight: 700;
+  font-family: 'Share Tech Mono', monospace;
+  font-size: 0.9rem;
+}
+
+.confidence.high {
+  color: var(--success);
+}
+
+.confidence.medium {
+  color: var(--warning);
+}
+
+.status {
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 0.7rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.status.status-confirmed {
+  background: rgba(0, 255, 64, 0.2);
+  color: var(--success);
+}
+
+.status.status-pending {
+  background: rgba(255, 170, 0, 0.2);
+  color: var(--warning);
+}
+
+.status.status-false-positive {
+  background: rgba(255, 0, 64, 0.2);
+  color: var(--danger);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .page-header h1 {
+    font-size: 2.5rem;
+    letter-spacing: 2px;
+  }
+  
+  .page-header p {
+    font-size: 1rem;
+  }
+  
+  .pattern-item {
+    flex-direction: column;
+    text-align: center;
+    gap: 10px;
+  }
+  
+  .pattern-status {
+    align-self: center;
+  }
+  
+  .detection-item {
+    flex-direction: column;
+    text-align: center;
+    gap: 10px;
+  }
+  
+  .detection-meta {
+    align-items: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .page-header h1 {
+    font-size: 2rem;
+    letter-spacing: 1px;
+  }
+  
+  .pattern-icon,
+  .detection-icon {
+    width: 60px;
+    height: 60px;
+    font-size: 2.5rem;
+  }
+}

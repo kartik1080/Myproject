@@ -132,11 +132,11 @@ const Dashboard: React.FC = () => {
               <h3 className="card-title">System Console</h3>
             </div>
             <div className="terminal console">
-              <div className="console-line">> System initialized successfully</div>
-              <div className="console-line">> Loading security protocols...</div>
-              <div className="console-line">> Monitoring systems active</div>
-              <div className="console-line">> Ready for commands</div>
-              <div className="console-line">> _</div>
+              <div className="console-line">{'>'} System initialized successfully</div>
+              <div className="console-line">{'>'} Loading security protocols...</div>
+              <div className="console-line">{'>'} Monitoring systems active</div>
+              <div className="console-line">{'>'} Ready for commands</div>
+              <div className="console-line">{'>'} _</div>
             </div>
           </div>
         </div>

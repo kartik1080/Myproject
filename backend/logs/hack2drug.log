@@ -74,3 +74,41 @@ WARNING 2025-08-31 17:29:42,504 log 372 4384 Not Found: /users/
 WARNING 2025-08-31 17:29:42,505 basehttp 372 4384 "GET /users/ HTTP/1.1" 404 7460
 WARNING 2025-08-31 17:29:45,490 log 372 4384 Unauthorized: /detection/
 WARNING 2025-08-31 17:29:45,491 basehttp 372 4384 "GET /detection/ HTTP/1.1" 401 5072
+INFO 2025-08-31 17:41:55,296 autoreload 21352 7868 Watching for file changes with StatReloader
+INFO 2025-08-31 17:41:59,741 basehttp 21352 11648 "GET / HTTP/1.1" 200 5572
+WARNING 2025-08-31 17:42:00,109 log 21352 11648 Not Found: /favicon.ico
+WARNING 2025-08-31 17:42:00,110 basehttp 21352 11648 "GET /favicon.ico HTTP/1.1" 404 3274
+WARNING 2025-08-31 17:42:15,910 log 21352 18664 Unauthorized: /monitoring/
+WARNING 2025-08-31 17:42:15,911 basehttp 21352 18664 "GET /monitoring/ HTTP/1.1" 401 5077
+INFO 2025-08-31 17:42:15,924 basehttp 21352 18664 "GET /static/rest_framework/css/bootstrap.min.css HTTP/1.1" 304 0
+INFO 2025-08-31 17:42:15,928 basehttp 21352 18664 "GET /static/rest_framework/css/bootstrap-tweaks.css HTTP/1.1" 304 0
+INFO 2025-08-31 17:42:15,931 basehttp 21352 21004 "GET /static/rest_framework/js/jquery-3.5.1.min.js HTTP/1.1" 304 0
+INFO 2025-08-31 17:42:15,931 basehttp 21352 1324 "GET /static/rest_framework/css/prettify.css HTTP/1.1" 304 0
+INFO 2025-08-31 17:42:15,933 basehttp 21352 2832 "GET /static/rest_framework/css/default.css HTTP/1.1" 304 0
+INFO 2025-08-31 17:42:15,933 basehttp 21352 18664 "GET /static/rest_framework/js/bootstrap.min.js HTTP/1.1" 304 0
+INFO 2025-08-31 17:42:15,934 basehttp 21352 21820 "GET /static/rest_framework/js/ajax-form.js HTTP/1.1" 304 0
+INFO 2025-08-31 17:42:15,935 basehttp 21352 21004 "GET /static/rest_framework/js/default.js HTTP/1.1" 304 0
+INFO 2025-08-31 17:42:15,935 basehttp 21352 1324 "GET /static/rest_framework/js/prettify-min.js HTTP/1.1" 304 0
+INFO 2025-08-31 17:42:15,935 basehttp 21352 9016 "GET /static/rest_framework/js/csrf.js HTTP/1.1" 304 0
+INFO 2025-08-31 17:42:15,942 basehttp 21352 9016 "GET /static/rest_framework/img/grid.png HTTP/1.1" 304 0
+WARNING 2025-08-31 17:42:23,702 log 21352 9016 Unauthorized: /api/
+WARNING 2025-08-31 17:42:23,702 basehttp 21352 9016 "GET /api/ HTTP/1.1" 401 5042
+WARNING 2025-08-31 17:42:31,874 log 21352 9016 Unauthorized: /detection/
+WARNING 2025-08-31 17:42:31,875 basehttp 21352 9016 "GET /detection/ HTTP/1.1" 401 5072
+INFO 2025-08-31 17:48:29,608 basehttp 21352 17796 "GET / HTTP/1.1" 200 5572
+WARNING 2025-08-31 17:48:32,701 log 21352 17796 Not Found: /users/
+WARNING 2025-08-31 17:48:32,702 basehttp 21352 17796 "GET /users/ HTTP/1.1" 404 7460
+WARNING 2025-08-31 17:48:35,582 log 21352 17796 Unauthorized: /detection/
+WARNING 2025-08-31 17:48:35,582 basehttp 21352 17796 "GET /detection/ HTTP/1.1" 401 5072
+WARNING 2025-08-31 17:48:38,576 log 21352 17796 Unauthorized: /monitoring/
+WARNING 2025-08-31 17:48:38,577 basehttp 21352 17796 "GET /monitoring/ HTTP/1.1" 401 5077
+WARNING 2025-08-31 17:48:41,492 log 21352 17796 Unauthorized: /analytics/
+WARNING 2025-08-31 17:48:41,493 basehttp 21352 17796 "GET /analytics/ HTTP/1.1" 401 5072
+INFO 2025-08-31 17:49:20,262 autoreload 6308 3416 Watching for file changes with StatReloader
+INFO 2025-08-31 17:49:21,799 basehttp 6308 5440 "GET / HTTP/1.1" 200 5572
+WARNING 2025-08-31 17:49:24,762 log 6308 5440 Unauthorized: /detection/
+WARNING 2025-08-31 17:49:24,762 basehttp 6308 5440 "GET /detection/ HTTP/1.1" 401 5072
+INFO 2025-08-31 17:51:01,760 autoreload 6308 3416 E:\Myproject\backend\hack2drug\urls.py changed, reloading.
+INFO 2025-08-31 17:51:02,366 autoreload 22304 18408 Watching for file changes with StatReloader
+INFO 2025-08-31 17:51:40,978 autoreload 22304 18408 E:\Myproject\backend\hack2drug\urls.py changed, reloading.
+INFO 2025-08-31 17:51:41,784 autoreload 10680 2452 Watching for file changes with StatReloader

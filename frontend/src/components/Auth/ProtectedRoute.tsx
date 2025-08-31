@@ -1,9 +1,5 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { useSelector, useDispatch } from 'react-redux';
-import { Box, CircularProgress, Typography } from '@mui/material';
-import { RootState, AppDispatch } from '../../store';
-import { getCurrentUser } from '../../store/slices/authSlice';
 
 interface ProtectedRouteProps {
   children: React.ReactNode;
@@ -11,36 +7,32 @@ interface ProtectedRouteProps {
 
 const ProtectedRoute: React.FC<ProtectedRouteProps> = ({ children }) => {
   const navigate = useNavigate();
-  const dispatch = useDispatch<AppDispatch>();
-  const { isAuthenticated, isLoading, token } = useSelector((state: RootState) => state.auth);
+  const [isLoading, setIsLoading] = useState(true);
+  const [isAuthenticated, setIsAuthenticated] = useState(false);
 
   useEffect(() => {
-    if (token && !isAuthenticated) {
-      dispatch(getCurrentUser());
-    }
-  }, [dispatch, token, isAuthenticated]);
-
-  useEffect(() => {
-    if (!isLoading && !isAuthenticated && !token) {
+    // Check if user is authenticated
+    const token = localStorage.getItem('token');
+    const user = localStorage.getItem('user');
+    
+    if (token && user) {
+      setIsAuthenticated(true);
+    } else {
+      // Clear any invalid data
+      localStorage.removeItem('token');
+      localStorage.removeItem('user');
       navigate('/login');
     }
-  }, [isLoading, isAuthenticated, token, navigate]);
+    
+    setIsLoading(false);
+  }, [navigate]);
 
   if (isLoading) {
     return (
-      <Box
-        display="flex"
-        flexDirection="column"
-        alignItems="center"
-        justifyContent="center"
-        minHeight="100vh"
-        gap={2}
-      >
-        <CircularProgress size={60} />
-        <Typography variant="h6" color="text.secondary">
-          Loading...
-        </Typography>
-      </Box>
+      <div className="loading-container">
+        <div className="loading-spinner"></div>
+        <div className="loading-text">Initializing System...</div>
+      </div>
     );
   }
 

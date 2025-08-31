@@ -14,9 +14,10 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('api/', include('api.rest_urls')),
     path('users/', include('users.urls')),
-    path('detection/', include('detection.urls')),
-    path('monitoring/', include('monitoring.urls')),
-    path('analytics/', include('analytics.urls')),
+    # Removed conflicting frontend routes - these are now handled by React
+    # path('detection/', include('detection.urls')),
+    # path('monitoring/', include('monitoring.urls')),
+    # path('analytics/', include('analytics.urls')),
 ]
 
 # Serve static and media files in development
