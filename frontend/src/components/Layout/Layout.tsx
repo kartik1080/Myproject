@@ -28,7 +28,7 @@ const Layout: React.FC = () => {
         <div className="container">
           <div className="nav-content">
             <Link to="/dashboard" className="nav-brand glow-text">
-              HACK2DRUG
+              EchoBat
             </Link>
             
             <div className="nav-menu">

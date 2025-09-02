@@ -56,7 +56,7 @@ const Login: React.FC = () => {
         <div className="auth-card">
           {/* Header */}
           <div className="auth-header">
-            <h1 className="glow-text">HACK2DRUG</h1>
+            <h1 className="glow-text">EchoBat</h1>
             <p className="text-muted">Advanced Drug Detection & Monitoring System</p>
             <div className="auth-subtitle">
               <span className="terminal"> Access Control Terminal</span>
